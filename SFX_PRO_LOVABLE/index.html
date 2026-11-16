@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SFX PRO — O Plugin de Efeitos Sonoros Mais Rápido para Premiere Pro</title>
+  <meta name="description" content="Edite 10x mais rápido no Premiere Pro. Ouça, personalize e insira efeitos sonoros diretamente na sua timeline — ou use o AUTO SFX para sonorizar seus cortes em segundos.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/sfx-pro-icon.png?v=2">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+  <!-- Glows de Fundo -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+
+  <!-- Navbar Principal -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand">
+        <img src="assets/sfx-pro-icon.png?v=2" alt="SFX PRO" class="brand-icon">
+        <span class="brand-text">SFX <span class="pro">PRO</span></span>
+        <span class="brand-badge">PREMIERE PRO</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#auto-sfx">Auto SFX</a></li>
+          <li><a href="#demoSons">Ouvir Sons</a></li>
+          <li><a href="#precoVitrine">Preço</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#cliente" class="btn-client-portal" id="btnNavClientPortal" title="Acessar minha conta, downloads e chave">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+          </svg>
+          <span>Área do Cliente</span>
+        </a>
+        <a href="#precoVitrine" class="btn btn-primary btn-sm">
+          <span>Quero o Plugin</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       1. LANDING PAGE DE VENDAS (MODO PADRÃO VISÍVEL PARA CLIENTES)
+       ====================================================================== -->
+  <div id="landingWrapper">
+    
+    <!-- Top Urgency -->
+    <div class="top-bar">
+      <span class="tag">⚡ OFERTA VITALÍCIA</span>
+      <span>Acesso Vitalício + Pacote com <strong>+ de 2.000 SFX</strong> com 65% de Desconto hoje!</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        
+        <div class="hero-badge-wrap">
+          <div class="hero-badge">
+            <span>⚡ NOVA VERSÃO COM AUTO SFX INTELIGENTE</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Edite <span class="highlight">10x Mais Rápido</span> Sonorizando seus Vídeos no Premiere Pro em 1 Clique
+        </h1>
+
+        <p class="hero-subtitle">
+          Diga adeus ao inferno de garimpar pastas e arrastar arquivos manualmente. 
+          Ouça qualquer efeito instantaneamente e deixe o <strong>AUTO SFX</strong> preencher todos os cortes e marcadores da sua timeline automaticamente.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#precoVitrine" class="btn btn-primary btn-lg">
+            <span>QUERO O SFX PRO COM DESCONTO</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#demoSons" class="btn btn-secondary btn-lg">
+            <span>▶ Testar Sons ao Vivo</span>
+          </a>
+        </div>
+
+        <div class="hero-guarantee-note">
+          <span>🔒 Pagamento Único (Sem Mensalidades)</span>
+          <span>⚡ Entrega Automática via Kiwify</span>
+          <span>💻 Compatível com Mac & Windows</span>
+          <span>🛡️ Garantia de 7 Dias</span>
+        </div>
+
+        <!-- MOCKUP ULTRA-FIDELIDADE PREMIERE PRO & PAINEL SFX PRO -->
+        <div class="premiere-showcase-wrap">
+          <!-- Barra de Título do Premiere Pro -->
+          <div class="premiere-window-titlebar">
+            <div class="premiere-dots">
+              <span class="p-dot red"></span>
+              <span class="p-dot yellow"></span>
+              <span class="p-dot green"></span>
+            </div>
+            <div class="premiere-window-title">
+              <span class="status-dot pulse-green"></span>
+              <span>Adobe Premiere Pro 2024 — Painel SFX PRO Studio</span>
+            </div>
+            <div class="premiere-status-badge">
+              <span class="sync-dot"></span>
+              <span>Seq: Teaser_Oficial.prproj (24 fps)</span>
+            </div>
+          </div>
+
+          <!-- Topbar Interna do Painel SFX PRO -->
+          <div class="mockup-header-bar">
+            <div class="mock-brand">
+              <span class="mock-brand-name">SFX<span class="mock-brand-accent">PRO</span></span>
+              <span class="mock-brand-chip">STUDIO</span>
+            </div>
+
+            <!-- Seletor de Trilha Inteligente -->
+            <div class="mock-track-selector">
+              <span class="mock-track-label">Trilha Alvo:</span>
+              <div class="mock-track-pills">
+                <span class="mock-tp">A1</span>
+                <span class="mock-tp active" title="Padrão Recomendado">A2</span>
+                <span class="mock-tp">A3</span>
+                <span class="mock-tp">A4</span>
+                <span class="mock-tp new">+ Nova</span>
+              </div>
+            </div>
+
+            <!-- Botão Auto SFX com visual oficial -->
+            <div class="mock-auto-btn">
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor">
+                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.089z"/>
+              </svg>
+              <span>AUTO SFX STUDIO</span>
+            </div>
+          </div>
+
+          <div class="premiere-workspace-body">
+            <!-- Sidebar de Pastas & Grupos (Zero emojis, ícones técnicos SVG elegantes) -->
+            <div class="mockup-sidebar">
+              <div class="mock-sidebar-group">
+                <span class="mock-side-header">Navegação Rápida</span>
+                <div class="mock-side-item active">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0 3a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0 3a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0 3a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7z"/>
+                  </svg>
+                  <span>Todos os Sons</span>
+                  <span class="mock-count-badge">2.358</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <span>Favoritos</span>
+                  <span class="mock-count-badge">48</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>
+                  <span>Recentes</span>
+                  <span class="mock-count-badge">16</span>
+                </div>
+              </div>
+
+              <div class="mock-sidebar-group">
+                <span class="mock-side-header">Pastas da Biblioteca</span>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h4.672a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.5a2 2 0 0 1-2-2V3.87z"/>
+                  </svg>
+                  <span>Whooshes & Swipes</span>
+                  <span class="mock-count-badge">474</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 3a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>
+                  </svg>
+                  <span>Impactos & Booms</span>
+                  <span class="mock-count-badge">312</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h11A1.5 1.5 0 0 1 15 2.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 13.5v-11zM2.5 2a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5h-11z"/>
+                  </svg>
+                  <span>UI & Interface</span>
+                  <span class="mock-count-badge">285</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                  <span>Risers & Tensão</span>
+                  <span class="mock-count-badge">198</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4zm5 0a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H9zM4 9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H4zm5 0a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H9z"/>
+                  </svg>
+                  <span>Glitches & Digital</span>
+                  <span class="mock-count-badge">164</span>
+                </div>
+                <div class="mock-side-item">
+                  <svg class="mock-side-svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                    <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                  <span>Foley & Orgânicos</span>
+                  <span class="mock-count-badge">877</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Área Central do Explorer -->
+            <div class="mockup-main">
+              <!-- Toolbar Superior do Explorer -->
+              <div class="mockup-top-toolbar">
+                <div class="mock-search-box">
+                  <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                  <span>Buscar entre 2.358 efeitos por nome ou tag...</span>
+                </div>
+                <div class="mock-filter-pills">
+                  <span class="mock-fp active">Todos</span>
+                  <span class="mock-fp">WAV 24-bit</span>
+                  <span class="mock-fp">48 kHz</span>
+                  <span class="mock-fp">Stereo</span>
+                </div>
+              </div>
+
+              <!-- Lista de Sons com Waveforms de Alta Densidade (32 barras orgânicas) -->
+              <div class="mockup-sound-list">
+                <!-- Row 1: Playing / Active -->
+                <div class="mock-row highlight-row playing">
+                  <div class="mock-row-sound">
+                    <div class="mock-play-btn active">❚❚</div>
+                    <div class="mock-sound-info">
+                      <div class="mock-sound-title">Whoosh Fast Clean 03.wav</div>
+                      <div class="mock-tags-wrap">
+                        <span class="mock-tag-pill wav">WAV</span>
+                        <span class="mock-tag-pill">Transições Short</span>
+                        <span class="mock-tag-pill mono">48kHz / 24-bit</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Waveform Realista de Alta Densidade (32 Barras Finas) -->
+                  <div class="mock-waveform-canvas">
+                    <!-- Barras já reproduzidas (Glowing Amber) -->
+                    <span class="mock-wave-bar played pulse-1" style="height: 16%;"></span>
+                    <span class="mock-wave-bar played pulse-2" style="height: 22%;"></span>
+                    <span class="mock-wave-bar played pulse-3" style="height: 28%;"></span>
+                    <span class="mock-wave-bar played pulse-1" style="height: 42%;"></span>
+                    <span class="mock-wave-bar played pulse-2" style="height: 65%;"></span>
+                    <span class="mock-wave-bar played pulse-3" style="height: 88%;"></span>
+                    <span class="mock-wave-bar played pulse-1" style="height: 100%;"></span>
+                    <span class="mock-wave-bar played pulse-2" style="height: 92%;"></span>
+                    <span class="mock-wave-bar played pulse-3" style="height: 78%;"></span>
+                    <span class="mock-wave-bar played pulse-1" style="height: 62%;"></span>
+                    <span class="mock-wave-bar played pulse-2" style="height: 45%;"></span>
+                    <span class="mock-wave-bar played pulse-3" style="height: 30%;"></span>
+                    <span class="mock-wave-bar played pulse-1" style="height: 20%;"></span>
+                    <span class="mock-wave-bar played pulse-2" style="height: 25%;"></span>
+                    <!-- Agulha Scrubber / CTI -->
+                    <div class="mock-playhead-line"></div>
+                    <!-- Barras seguintes (Translucent Amber) -->
+                    <span class="mock-wave-bar" style="height: 40%;"></span>
+                    <span class="mock-wave-bar" style="height: 68%;"></span>
+                    <span class="mock-wave-bar" style="height: 92%;"></span>
+                    <span class="mock-wave-bar" style="height: 98%;"></span>
+                    <span class="mock-wave-bar" style="height: 85%;"></span>
+                    <span class="mock-wave-bar" style="height: 65%;"></span>
+                    <span class="mock-wave-bar" style="height: 45%;"></span>
+                    <span class="mock-wave-bar" style="height: 30%;"></span>
+                    <span class="mock-wave-bar" style="height: 22%;"></span>
+                    <span class="mock-wave-bar" style="height: 16%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 18%;"></span>
+                    <span class="mock-wave-bar" style="height: 26%;"></span>
+                    <span class="mock-wave-bar" style="height: 34%;"></span>
+                    <span class="mock-wave-bar" style="height: 25%;"></span>
+                    <span class="mock-wave-bar" style="height: 18%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                  </div>
+
+                  <div class="mock-row-end">
+                    <span class="mock-duration">0.42s</span>
+                    <button class="mock-row-btn-insert active">Inserir A2</button>
+                  </div>
+                </div>
+
+                <!-- Row 2: Sub Impact Hit -->
+                <div class="mock-row">
+                  <div class="mock-row-sound">
+                    <div class="mock-play-btn">▶</div>
+                    <div class="mock-sound-info">
+                      <div class="mock-sound-title">Cinematic Sub Impact Hit 01.wav</div>
+                      <div class="mock-tags-wrap">
+                        <span class="mock-tag-pill wav">WAV</span>
+                        <span class="mock-tag-pill">Impacts & Booms</span>
+                        <span class="mock-tag-pill mono">48kHz</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="mock-waveform-canvas">
+                    <span class="mock-wave-bar" style="height: 100%;"></span>
+                    <span class="mock-wave-bar" style="height: 94%;"></span>
+                    <span class="mock-wave-bar" style="height: 86%;"></span>
+                    <span class="mock-wave-bar" style="height: 76%;"></span>
+                    <span class="mock-wave-bar" style="height: 66%;"></span>
+                    <span class="mock-wave-bar" style="height: 56%;"></span>
+                    <span class="mock-wave-bar" style="height: 48%;"></span>
+                    <span class="mock-wave-bar" style="height: 42%;"></span>
+                    <span class="mock-wave-bar" style="height: 36%;"></span>
+                    <span class="mock-wave-bar" style="height: 32%;"></span>
+                    <span class="mock-wave-bar" style="height: 28%;"></span>
+                    <span class="mock-wave-bar" style="height: 25%;"></span>
+                    <span class="mock-wave-bar" style="height: 22%;"></span>
+                    <span class="mock-wave-bar" style="height: 20%;"></span>
+                    <span class="mock-wave-bar" style="height: 18%;"></span>
+                    <span class="mock-wave-bar" style="height: 16%;"></span>
+                    <span class="mock-wave-bar" style="height: 14%;"></span>
+                    <span class="mock-wave-bar" style="height: 13%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 11%;"></span>
+                    <span class="mock-wave-bar" style="height: 10%;"></span>
+                    <span class="mock-wave-bar" style="height: 9%;"></span>
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                    <span class="mock-wave-bar" style="height: 7%;"></span>
+                    <span class="mock-wave-bar" style="height: 7%;"></span>
+                    <span class="mock-wave-bar" style="height: 6%;"></span>
+                    <span class="mock-wave-bar" style="height: 6%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                  </div>
+
+                  <div class="mock-row-end">
+                    <span class="mock-duration">02.40s</span>
+                    <button class="mock-row-btn-insert">+ Inserir</button>
+                  </div>
+                </div>
+
+                <!-- Row 3: UI Pop Clean Modern Bubble -->
+                <div class="mock-row">
+                  <div class="mock-row-sound">
+                    <div class="mock-play-btn">▶</div>
+                    <div class="mock-sound-info">
+                      <div class="mock-sound-title">UI Pop Clean Modern Bubble.wav</div>
+                      <div class="mock-tags-wrap">
+                        <span class="mock-tag-pill wav">WAV</span>
+                        <span class="mock-tag-pill">UI & Notificações</span>
+                        <span class="mock-tag-pill mono">48kHz</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="mock-waveform-canvas">
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 24%;"></span>
+                    <span class="mock-wave-bar" style="height: 70%;"></span>
+                    <span class="mock-wave-bar" style="height: 95%;"></span>
+                    <span class="mock-wave-bar" style="height: 45%;"></span>
+                    <span class="mock-wave-bar" style="height: 18%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 15%;"></span>
+                    <span class="mock-wave-bar" style="height: 38%;"></span>
+                    <span class="mock-wave-bar" style="height: 85%;"></span>
+                    <span class="mock-wave-bar" style="height: 100%;"></span>
+                    <span class="mock-wave-bar" style="height: 52%;"></span>
+                    <span class="mock-wave-bar" style="height: 22%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 10%;"></span>
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                    <span class="mock-wave-bar" style="height: 6%;"></span>
+                    <span class="mock-wave-bar" style="height: 6%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                  </div>
+
+                  <div class="mock-row-end">
+                    <span class="mock-duration">0.28s</span>
+                    <button class="mock-row-btn-insert">+ Inserir</button>
+                  </div>
+                </div>
+
+                <!-- Row 4: Cyber Riser Dark Build -->
+                <div class="mock-row">
+                  <div class="mock-row-sound">
+                    <div class="mock-play-btn">▶</div>
+                    <div class="mock-sound-info">
+                      <div class="mock-sound-title">Cyber Riser Dark Build 02.wav</div>
+                      <div class="mock-tags-wrap">
+                        <span class="mock-tag-pill wav">WAV</span>
+                        <span class="mock-tag-pill">Risers & Tensão</span>
+                        <span class="mock-tag-pill mono">48kHz</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="mock-waveform-canvas">
+                    <span class="mock-wave-bar" style="height: 6%;"></span>
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                    <span class="mock-wave-bar" style="height: 10%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 14%;"></span>
+                    <span class="mock-wave-bar" style="height: 16%;"></span>
+                    <span class="mock-wave-bar" style="height: 18%;"></span>
+                    <span class="mock-wave-bar" style="height: 22%;"></span>
+                    <span class="mock-wave-bar" style="height: 26%;"></span>
+                    <span class="mock-wave-bar" style="height: 30%;"></span>
+                    <span class="mock-wave-bar" style="height: 36%;"></span>
+                    <span class="mock-wave-bar" style="height: 42%;"></span>
+                    <span class="mock-wave-bar" style="height: 48%;"></span>
+                    <span class="mock-wave-bar" style="height: 55%;"></span>
+                    <span class="mock-wave-bar" style="height: 62%;"></span>
+                    <span class="mock-wave-bar" style="height: 70%;"></span>
+                    <span class="mock-wave-bar" style="height: 78%;"></span>
+                    <span class="mock-wave-bar" style="height: 85%;"></span>
+                    <span class="mock-wave-bar" style="height: 92%;"></span>
+                    <span class="mock-wave-bar" style="height: 98%;"></span>
+                    <span class="mock-wave-bar" style="height: 100%;"></span>
+                    <span class="mock-wave-bar" style="height: 92%;"></span>
+                    <span class="mock-wave-bar" style="height: 75%;"></span>
+                    <span class="mock-wave-bar" style="height: 50%;"></span>
+                    <span class="mock-wave-bar" style="height: 30%;"></span>
+                    <span class="mock-wave-bar" style="height: 18%;"></span>
+                    <span class="mock-wave-bar" style="height: 12%;"></span>
+                    <span class="mock-wave-bar" style="height: 8%;"></span>
+                    <span class="mock-wave-bar" style="height: 6%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                    <span class="mock-wave-bar" style="height: 5%;"></span>
+                  </div>
+
+                  <div class="mock-row-end">
+                    <span class="mock-duration">04.80s</span>
+                    <button class="mock-row-btn-insert">+ Inserir</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deck Inferior: Master Scrubber / Player Estilo CEP Studio -->
+              <div class="mockup-deck">
+                <div class="mock-deck-left">
+                  <div class="mock-deck-controls">
+                    <span class="mock-ctl-btn" title="Anterior">⏮</span>
+                    <span class="mock-ctl-play active" title="Reproduzir">❚❚</span>
+                    <span class="mock-ctl-btn" title="Próximo">⏭</span>
+                  </div>
+                  <div class="mock-deck-info">
+                    <div class="mock-deck-title">Whoosh Fast Clean 03.wav</div>
+                    <div class="mock-deck-sub">48.000 Hz • 24-bit PCM Stereo • Transições Short</div>
+                  </div>
+                </div>
+
+                <div class="mock-deck-center">
+                  <span class="mock-time">00:00.18</span>
+                  <div class="mock-deck-waveform">
+                    <div class="mock-deck-bars">
+                      <span style="height:20%;"></span><span style="height:35%;"></span><span style="height:55%;"></span><span style="height:80%;"></span><span style="height:100%;"></span><span style="height:85%;"></span><span style="height:60%;"></span><span style="height:40%;"></span><span style="height:25%;"></span><span style="height:30%;"></span><span style="height:50%;"></span><span style="height:75%;"></span><span style="height:90%;"></span><span style="height:95%;"></span><span style="height:70%;"></span><span style="height:45%;"></span><span style="height:30%;"></span><span style="height:20%;"></span><span style="height:15%;"></span><span style="height:10%;"></span>
+                    </div>
+                    <div class="mock-deck-needle" style="left: 45%;"></div>
+                  </div>
+                  <span class="mock-time total">00:00.42</span>
+                </div>
+
+                <div class="mock-deck-right">
+                  <span class="mock-deck-status">
+                    <span class="pulse-dot-green"></span>
+                    <span>Inserção Armada: Trilha <strong>[A2]</strong> na CTI</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Métricas Reais (+ de 2.000 SFX) -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-value accent">+2.000</div>
+            <div class="metric-label">SFX em Alta Fidelidade Inclusos</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">69</div>
+            <div class="metric-label">Pastas e Categorias Curadas</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value accent">3s</div>
+            <div class="metric-label">Tempo para Sonorizar com Auto SFX</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Nativo para Mac & Windows</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparativo Antes vs Depois -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">A REVOLUÇÃO NO SEU FLUXO</span>
+          <h2 class="section-title">Chega de perder tempo caçando arquivo no computador</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+            Sound design eleva seus vídeos de amadores para produções de alto valor, mas o jeito tradicional é desgastante.
+          </p>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="compare-card before">
+            <span class="compare-badge">Editando do Jeito Antigo</span>
+            <h3 class="compare-title">O Processo Lento e Desgastante</h3>
+            <ul class="compare-list">
+              <li><span class="compare-icon bad">✕</span> Dezenas de pastas soltas no Explorer/Finder sem organização.</li>
+              <li><span class="compare-icon bad">✕</span> Ter que abrir reprodutor externo para ouvir cada efeito.</li>
+              <li><span class="compare-icon bad">✕</span> Arrastar com o mouse clipe por clipe e acertar o corte manualmente.</li>
+              <li><span class="compare-icon bad">✕</span> Mídias desconectadas quando você move arquivos do lugar.</li>
+            </ul>
+          </div>
+
+          <div class="compare-card after">
+            <span class="compare-badge">Com o SFX PRO</span>
+            <h3 class="compare-title">Sonorização Ágil em Poucos Cliques</h3>
+            <ul class="compare-list">
+              <li><span class="compare-icon good">✓</span> <strong>Painel nativo</strong> dentro do Premiere Pro com busca instantânea.</li>
+              <li><span class="compare-icon good">✓</span> <strong>Audição imediata</strong> em 1 clique com visualização de onda sonora.</li>
+              <li><span class="compare-icon good">✓</span> <strong>AUTO SFX:</strong> identifica cortes e marcadores e posiciona todos os sons na trilha certa em segundos.</li>
+              <li><span class="compare-icon good">✓</span> <strong>Bin _SFX PRO:</strong> todos os arquivos são organizados automaticamente no projeto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTO SFX Feature -->
+    <section class="section" id="auto-sfx" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="auto-sfx-grid">
+          <div>
+            <span class="section-tag">INTELIGÊNCIA ARTIFICIAL APLICADA</span>
+            <h2 class="section-title">Como Funciona o <span class="highlight">AUTO SFX INTELIGENTE</span></h2>
+            <p style="color: var(--text-secondary); margin-bottom: 24px; line-height: 1.6;">
+              O AUTO SFX não joga sons aleatórios: ele analisa o ritmo da sua timeline, lê palavras-chave nos seus marcadores, sincroniza o pico exato de energia no corte e protege a voz do apresentador.
+            </p>
+
+            <div class="step-card">
+              <div class="step-number">🧠</div>
+              <div>
+                <strong style="color: #fff; display: block; margin-bottom: 4px;">1. Leitura Semântica Inteligente:</strong>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Identifica marcadores como <em>ZOOM, TEXTO, IMPACTO, MEME</em> e escolhe o som exato para o momento.</span>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">⏱️</div>
+              <div>
+                <strong style="color: #fff; display: block; margin-bottom: 4px;">2. Detecção de Ritmo (Pacing):</strong>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Em cortes rápidos (&lt;1.2s), prioriza sons ultracurtos para evitar poluição sonora; em cenas longas, libera sweeps com reverb.</span>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">🎯</div>
+              <div>
+                <strong style="color: #fff; display: block; margin-bottom: 4px;">3. Alinhamento de Pico Transiente & Camadas:</strong>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Calcula o pre-roll para o impacto bater no frame exato do corte, com suporte a Camada Dupla (Whoosh na A2 + Sub na A3).</span>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">🎙️</div>
+              <div>
+                <strong style="color: #fff; display: block; margin-bottom: 4px;">4. Ducking Inteligente de Voz:</strong>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Detecta se há fala na trilha A1 e insere o som atenuado em -6dB para nunca encobrir o diálogo.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simulador Interativo -->
+          <div>
+            <div class="auto-sfx-box">
+              <span style="font-size: 1rem; font-weight: 700; display: block; margin-bottom: 4px;">⚡ Teste o Simulador de IA da Timeline</span>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 14px;">Escolha o estilo de vídeo e veja a inteligência em ação:</p>
+
+              <div class="asfx-preset-pills" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px;">
+                <button class="asfx-pill-btn active" data-preset="dynamic">
+                  <h5>⚡ Dinâmico</h5>
+                  <p>Comercial & YouTube</p>
+                </button>
+                <button class="asfx-pill-btn" data-preset="viral">
+                  <h5>🔥 Viral Fast</h5>
+                  <p>Reels & TikTok</p>
+                </button>
+                <button class="asfx-pill-btn" data-preset="cinematic">
+                  <h5>🎬 Cinema</h5>
+                  <p>Sub booms e trailers</p>
+                </button>
+                <button class="asfx-pill-btn" data-preset="documentary">
+                  <h5>🕵️ Documentário</h5>
+                  <p>VSL & Tensão</p>
+                </button>
+              </div>
+
+              <button class="btn btn-primary" id="btnSimulateAutoSfx" style="width: 100%; margin-bottom: 14px;">
+                <span>Simular Análise Inteligente da Timeline</span>
+              </button>
+
+              <div id="asfxSimResults" style="display: flex; flex-direction: column; gap: 8px; font-size: 0.8rem;">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:6px;">
+                  <div>
+                    <span style="color:#f59e0b; font-family:monospace;">00:00:02:14</span>
+                    <span style="margin-left:6px; font-size:0.75rem; background:rgba(0,229,255,0.12); color:#00e5ff; padding:2px 6px; border-radius:3px;">⚡ Corte Rápido 0.8s</span>
+                  </div>
+                  <strong style="color:#fff;">Fast Whoosh 03 (Trilha A2)</strong>
+                </div>
+
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:6px;">
+                  <div>
+                    <span style="color:#f59e0b; font-family:monospace;">00:00:06:02</span>
+                    <span style="margin-left:6px; font-size:0.75rem; background:rgba(245,158,11,0.15); color:#fbbf24; padding:2px 6px; border-radius:3px;">🧠 Marcador ZOOM</span>
+                  </div>
+                  <strong style="color:#fff;">Deep Punch Bass (Trilha A2)</strong>
+                </div>
+
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:6px;">
+                  <div>
+                    <span style="color:#f59e0b; font-family:monospace;">00:00:10:18</span>
+                    <span style="margin-left:6px; font-size:0.75rem; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px;">🎚️ Camada Dupla A2+A3</span>
+                  </div>
+                  <strong style="color:#fff;">Epic Whoosh + Sub Hit</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soundboard Interativo -->
+    <section class="section" id="demoSons">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TESTE DE ÁUDIO REAL</span>
+          <h2 class="section-title">Ouça Amostras dos Efeitos</h2>
+          <p style="color: var(--text-secondary);">Clique nos cards abaixo para ouvir amostras sintetizadas instantaneamente no seu navegador:</p>
+        </div>
+
+        <div class="soundboard-grid">
+          <div class="sound-card" data-sound="whoosh">
+            <div class="sound-card-header">
+              <span class="sound-tag">Transições</span>
+              <div class="sound-play-icon">▶</div>
+            </div>
+            <h4>Whoosh Fast Sweep</h4>
+            <div class="sound-wave-anim">
+              <span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span>
+            </div>
+          </div>
+
+          <div class="sound-card" data-sound="boom">
+            <div class="sound-card-header">
+              <span class="sound-tag">Impactos</span>
+              <div class="sound-play-icon">▶</div>
+            </div>
+            <h4>Cinematic Sub Boom</h4>
+            <div class="sound-wave-anim">
+              <span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span>
+            </div>
+          </div>
+
+          <div class="sound-card" data-sound="pop">
+            <div class="sound-card-header">
+              <span class="sound-tag">Interface UI</span>
+              <div class="sound-play-icon">▶</div>
+            </div>
+            <h4>Clean UI Bubble Pop</h4>
+            <div class="sound-wave-anim">
+              <span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span>
+            </div>
+          </div>
+
+          <div class="sound-card" data-sound="click">
+            <div class="sound-card-header">
+              <span class="sound-tag">Foley</span>
+              <div class="sound-play-icon">▶</div>
+            </div>
+            <h4>Mechanical Click</h4>
+            <div class="sound-wave-anim">
+              <span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span>
+            </div>
+          </div>
+
+          <div class="sound-card" data-sound="riser">
+            <div class="sound-card-header">
+              <span class="sound-tag">Tensão</span>
+              <div class="sound-play-icon">▶</div>
+            </div>
+            <h4>Analog Pitch Riser</h4>
+            <div class="sound-wave-anim">
+              <span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span>
+            </div>
+          </div>
+
+          <div class="sound-card" data-sound="glitch">
+            <div class="sound-card-header">
+              <span class="sound-tag">Digital</span>
+              <div class="sound-play-icon">▶</div>
+            </div>
+            <h4>Digital Static Glitch</h4>
+            <div class="sound-wave-anim">
+              <span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span><span class="s-bar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preço e Oferta Kiwify -->
+    <section class="section" id="precoVitrine">
+      <div class="container">
+        <div class="pricing-card">
+          <span class="brand-badge" style="margin-bottom: 12px; display: inline-block;">PAGAMENTO ÚNICO • SEM MENSALIDADES</span>
+          <h2 style="font-size: 2.2rem; font-weight: 900; margin-bottom: 6px;">Garanta o SFX PRO Hoje</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">Acesso vitalício com entrega automática da licença no seu e-mail.</p>
+
+          <div class="price-box">
+            <div style="font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through;">De R$ 197,00</div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: var(--accent-light);">Por apenas 12x de</div>
+            <div class="price-main">R$ 6,70</div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary);">ou <strong>R$ 67,00 à vista</strong> no PIX ou Cartão</div>
+          </div>
+
+          <ul class="pricing-features">
+            <li><span class="chk">✓</span> <strong>Plugin SFX PRO</strong> nativo para Premiere Pro (Mac & Windows)</li>
+            <li><span class="chk">✓</span> <strong>Módulo AUTO SFX Studio</strong> com detecção automática</li>
+            <li><span class="chk">✓</span> <strong>Pacote Oficial</strong> com + de 2.000 SFX em WAV de alta qualidade</li>
+            <li><span class="chk">✓</span> <strong>Suporte a qualquer pasta</strong> pessoal do seu computador</li>
+            <li><span class="chk">✓</span> <strong>Acesso Vitalício</strong> com atualizações gratuitas inclusas</li>
+            <li><span class="chk">✓</span> <strong>Garantia incondicional de 7 dias</strong></li>
+          </ul>
+
+          <a href="https://pay.kiwify.com.br/" class="btn btn-primary btn-lg" style="width: 100%;" target="_blank" rel="noopener">
+            <span>QUERO O SFX PRO COM DESCONTO</span>
+          </a>
+
+          <div style="display: flex; justify-content: center; gap: 16px; margin-top: 20px; font-size: 0.8rem; color: var(--text-muted);">
+            <span>🔒 Kiwify 100% Seguro</span>
+            <span>⚡ Liberação Imediata</span>
+            <span>💳 PIX ou Cartão em até 12x</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PERGUNTAS FREQUENTES</span>
+          <h2 class="section-title">Tire Suas Dúvidas</h2>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Funciona no Windows e no Mac?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-a">
+              <p>Sim! O SFX PRO é compatível com Windows (10/11) e macOS (tanto Intel quanto Apple Silicon M1, M2, M3 e M4).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Quais versões do Premiere Pro são compatíveis?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-a">
+              <p>Compatível com Premiere Pro CC 2021, 2022, 2023, 2024 e Premiere Pro 2025 ou mais recente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Como recebo a chave de licença?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-a">
+              <p>A entrega é automática e imediata no seu e-mail logo após a aprovação do pagamento pela Kiwify.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
+              <span>Funciona sem internet?</span>
+              <span>+</span>
+            </button>
+            <div class="faq-a">
+              <p>Sim! Após ativar a licença uma única vez, o plugin funciona 100% offline no seu Premiere.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Callout Pré-Venda WhatsApp -->
+        <div style="text-align: center; margin-top: 36px; padding: 22px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: var(--radius-lg);">
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 12px;">
+            💬 Ainda tem alguma dúvida sobre compatibilidade ou funcionamento antes de comprar?
+          </p>
+          <a href="https://wa.me/5599985501962?text=Ol%C3%A1%20Silas!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20SFX%20PRO%20antes%20de%20comprar." target="_blank" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 8px;">
+            <span>Tirar Dúvida no WhatsApp com o Silas: (99) 98550-1962</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 SFX PRO por Silas Maroto. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ======================================================================
+       2. ÁREA DO CLIENTE & PORTAL DO ALUNO SFX PRO
+       ====================================================================== -->
+  <div id="clientWrapper" style="display: none;">
+    
+    <!-- Estado A: Tela de Consulta / Login do Cliente -->
+    <div id="clientLoginView" class="client-portal-auth-wrap">
+      <div class="client-auth-card">
+        <div class="client-auth-header">
+          <div class="client-auth-icon">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 2l-2 2m-2-2l2 2"/>
+              <path d="M3 7v6h6"/>
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M16 16v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h7"/>
+            </svg>
+          </div>
+          <h2>Portal do Cliente SFX PRO</h2>
+          <p>Acesse seus instaladores oficiais, biblioteca de sons e consulte sua chave de ativação vitalícia a qualquer momento.</p>
+        </div>
+
+        <form id="clientLookupForm" class="client-auth-form">
+          <div class="form-group" id="grpClientIdentifier">
+            <label for="clientEmailInput">E-mail Cadastrado ou Usuário</label>
+            <div class="input-with-icon">
+              <svg class="input-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
+              </svg>
+              <input type="text" id="clientEmailInput" placeholder="seu-email@exemplo.com" required autocomplete="username" spellcheck="false" />
+            </div>
+          </div>
+
+          <!-- Campo de Senha Master (ativado automaticamente quando identifica Silas Maroto / Admin) -->
+          <div class="form-group" id="grpAdminPassword" style="display: none; margin-top: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <label for="portalAdminPassword" style="color: #fbbf24; margin: 0; font-weight: 700;">👑 Senha Master de Administrador</label>
+              <span style="font-size: 0.7rem; color: #34d399; font-weight: 700; background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 4px;">Silas Maroto Detectado</span>
+            </div>
+            <div class="input-with-icon">
+              <svg class="input-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1.5-1.5H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg>
+              <input type="password" id="portalAdminPassword" placeholder="Digite sua senha master" autocomplete="current-password" />
+              <button type="button" class="btn-pwd-toggle" id="btnTogglePortalAdminPwd" title="Mostrar/ocultar senha">👁</button>
+            </div>
+          </div>
+
+          <div class="client-auth-alert error" id="clientLookupError" style="display: none;">
+            <span class="alert-icon">⚠️</span>
+            <span id="clientLookupErrorMsg">E-mail não encontrado. Verifique se digitou o mesmo e-mail da compra Kiwify.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-client-submit" id="btnSubmitClientLookup">
+            <span id="btnSubmitClientText">Acessar Meus Downloads e Chave</span>
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+              <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </button>
+
+          <button type="button" class="btn-cancel-login" id="btnReturnLandingFromClient">
+            ⬅ Voltar para a Página Inicial
+          </button>
+        </form>
+
+        <div class="client-auth-footer">
+          <p>Comprou agora na Kiwify? Seu acesso é liberado automaticamente em menos de 1 minuto.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estado B: Dashboard do Cliente (Logado) -->
+    <div id="clientDashboardView" class="client-dashboard-wrap" style="display: none;">
+      <div class="container">
+        
+        <!-- Topo da Área do Membro -->
+        <div class="client-top-bar">
+          <div class="client-identity">
+            <div class="client-avatar">🎧</div>
+            <div>
+              <div class="client-welcome-row">
+                <h2>Olá, <span id="clientNameDisplay">Cliente SFX PRO</span>! 👋</h2>
+                <span class="client-badge-vip">● Acesso Vitalício Ativo</span>
+              </div>
+              <p class="client-subtext">Gerencie sua licença, faça downloads e consulte seus tutoriais oficiais.</p>
+            </div>
+          </div>
+
+          <div class="client-nav-actions">
+            <button class="btn btn-sm btn-outline-light" id="btnClientBackToSite">
+              <span>⬅ Ver Vitrine</span>
+            </button>
+            <button class="btn btn-sm btn-outline-danger" id="btnClientLogout">
+              <span>🚪 Sair da Conta</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 1. CARTÃO HERO: CHAVE DE LICENÇA (O MAIS IMPORTANTE) -->
+        <div class="client-license-hero">
+          <div class="license-hero-badge">SUA CHAVE DE ATIVAÇÃO PESSOAL</div>
+          <div class="license-hero-body">
+            <div class="license-key-box">
+              <span class="key-icon">🔑</span>
+              <span class="key-text" id="clientLicenseKeyDisplay">SFXPRO-XXXX-XXXX-XXXX</span>
+              <button class="btn btn-primary btn-copy-key" id="btnClientCopyKey">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                </svg>
+                <span id="copyKeyBtnText">Copiar Chave</span>
+              </button>
+            </div>
+
+            <!-- Metadados da Licença e Troca de HWID -->
+            <div class="license-meta-row">
+              <div class="meta-item">
+                <span class="meta-label">Plano Contratado:</span>
+                <span class="meta-value accent" id="clientPlanDisplay">Vitalícia Completa</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Data da Compra:</span>
+                <span class="meta-value" id="clientDateDisplay">Hoje</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Computador Vinculado:</span>
+                <span class="meta-value" id="clientHwidDisplay">● Nenhum (Pronto para Ativar)</span>
+              </div>
+              <div class="meta-item">
+                <button class="btn btn-sm btn-outline-warning" id="btnClientResetHwid" title="Liberar chave para ativar em outro Mac ou PC">
+                  <span>🔄 Trocar de Computador</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="license-hero-footer">
+            <span>🛡️ Chave de uso pessoal e intransferível. Válida para Adobe Premiere Pro (Mac e Windows).</span>
+          </div>
+        </div>
+
+        <!-- 2. CENTRAL DE DOWNLOADS OFICIAIS -->
+        <div class="client-section">
+          <div class="client-section-header">
+            <h3>📬 Downloads Oficiais do SFX PRO</h3>
+            <p>Baixe a versão mais recente da extensão e o acervo completo de efeitos sonoros em alta fidelidade.</p>
+          </div>
+
+          <div class="client-downloads-grid">
+            <!-- Download Mac -->
+            <div class="client-dl-card">
+              <div class="dl-card-icon mac">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.72-.93 2.74 1 .08 2.02-.49 2.63-1.24z"/>
+                </svg>
+              </div>
+              <h4>Instalador para macOS</h4>
+              <p>Apple Silicon (M1/M2/M3/M4) e processadores Intel. Premiere Pro 2021 a 2026+.</p>
+              <div class="dl-badge gold">Versão v2.4 Studio Pro • 28.4 MB (Pacote Completo)</div>
+              <button class="btn btn-primary btn-block btn-dl-action" data-download="mac">
+                <span>⬇ Baixar para Mac (.pkg)</span>
+              </button>
+              <a href="downloads/SFX_PRO_Studio_Mac_v2.4_Instalador.zip" download class="dl-sublink">Ou baixar pacote completo compactado (.zip)</a>
+            </div>
+
+            <!-- Download Windows -->
+            <div class="client-dl-card">
+              <div class="dl-card-icon win">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                  <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                </svg>
+              </div>
+              <h4>Instalador para Windows</h4>
+              <p>Windows 10 e Windows 11 (64-bit). Instalação automática em 1 clique.</p>
+              <div class="dl-badge gold">Versão v2.4 Studio Pro • 31.8 MB (Pacote Completo)</div>
+              <button class="btn btn-primary btn-block btn-dl-action" data-download="win">
+                <span>⬇ Baixar para Windows (.exe)</span>
+              </button>
+              <a href="downloads/SFX_PRO_Studio_Windows_v2.4_Instalador.zip" download class="dl-sublink">Ou baixar pacote completo compactado (.zip)</a>
+            </div>
+
+            <!-- Download Biblioteca +2.000 SFX -->
+            <div class="client-dl-card featured">
+              <div class="dl-card-icon sfx">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18V5l12-2v13"/>
+                  <circle cx="6" cy="18" r="3"/>
+                  <circle cx="18" cy="16" r="3"/>
+                </svg>
+              </div>
+              <h4>Super Pacote + de 2.000 SFX</h4>
+              <p>Acervo master em WAV 24-bit 48kHz dividido em 69 categorias profissionais prontas.</p>
+              <div class="dl-badge gold">1.8 GB Compactado • Áudio Studio Master</div>
+              <button class="btn btn-secondary btn-block btn-dl-action" data-download="sfx" style="background: #374151; color: #fff; border-color: rgba(255,255,255,0.15);">
+                <span>⬇ Baixar Biblioteca Completa (+2.000 SFX)</span>
+              </button>
+              <span class="dl-sublink" style="color:#64748b; cursor:default;">69 Categorias Master WAV 24-bit / MP3 320kbps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. GUIA RÁPIDO DE INSTALAÇÃO & ATIVAÇÃO EM 3 PASSOS -->
+        <div class="client-section">
+          <div class="client-section-header">
+            <h3>🚀 Como Instalar e Ativar em 3 Passos</h3>
+            <p>Leva menos de 2 minutos para ter todos os sons e o Auto SFX rodando no seu Premiere.</p>
+          </div>
+
+          <div class="client-steps-grid">
+            <div class="client-step-card">
+              <div class="step-num">1</div>
+              <h4>Execute o Instalador</h4>
+              <p>Baixe o instalador compatível com seu computador (Mac ou Windows) acima e conclua o assistente.</p>
+            </div>
+            <div class="client-step-card">
+              <div class="step-num">2</div>
+              <h4>Abra o Premiere Pro</h4>
+              <p>No Adobe Premiere Pro, clique no menu superior em: <strong>Janela &gt; Extensões &gt; SFX PRO</strong>.</p>
+            </div>
+            <div class="client-step-card">
+              <div class="step-num">3</div>
+              <h4>Cole sua Chave</h4>
+              <p>Cole a <strong>Chave de Ativação</strong> destacada acima no painel e clique em Ativar. Acesso liberado!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. SUPORTE VIP & AJUDA -->
+        <div class="client-support-box">
+          <div class="support-content">
+            <h4>💬 Precisa de ajuda com a instalação?</h4>
+            <p>Se tiver qualquer dúvida ou problema com a ativação, nosso suporte direto pelo WhatsApp está à disposição.</p>
+          </div>
+          <a href="https://wa.me/5599985501962?text=Ol%C3%A1%20Silas!%20Sou%20cliente%20do%20SFX%20PRO%20e%20preciso%20de%20ajuda%20com%20minha%20instala%C3%A7%C3%A3o." target="_blank" class="btn btn-whatsapp">
+            <span>Falar com o Silas no WhatsApp: (99) 98550-1962</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ======================================================================
+       2. CENTRAL DE ADMIN & GESTÃO (ACESSO DO SILAS MAROTO)
+       ====================================================================== -->
+  <div id="adminWrapper">
+    <div class="container">
+      
+      <!-- Top Admin Bar -->
+      <div class="admin-top-control-bar">
+        <div class="admin-mode-identity">
+          <span style="font-size: 1.3rem;">👑</span>
+          <div>
+            <strong style="color: #fff; display: block; font-size: 0.95rem;">CENTRAL DE GESTÃO SFX PRO</strong>
+            <span style="font-size: 0.75rem; color: var(--accent-light);">Painel de Controle • Silas Maroto</span>
+          </div>
+        </div>
+
+        <div class="admin-subtabs">
+          <button class="admin-subtab-btn active" data-subview="licenses">
+            <span>📋 Gestão de Licenças</span>
+          </button>
+          <button class="admin-subtab-btn" data-subview="offline">
+            <span>⚡ Gerador Offline HWID</span>
+          </button>
+          <button class="admin-subtab-btn" data-subview="webhook">
+            <span>🔗 Webhook Kiwify</span>
+          </button>
+          <button class="admin-subtab-btn" data-subview="downloads">
+            <span>📥 Links Google Drive</span>
+          </button>
+        </div>
+
+        <div class="admin-top-actions">
+          <button class="btn-change-pwd" id="btnAdminViewClientArea" title="Visualizar a Área do Cliente">
+            <span>🎧 Ver Área do Cliente</span>
+          </button>
+          <button class="btn-change-pwd" id="btnChangeAdminPassword" title="Trocar usuário ou senha de acesso master">
+            <span>🔑 Trocar Senha</span>
+          </button>
+          <button class="btn-return-landing" id="btnReturnLanding" title="Voltar para a vitrine pública">
+            <span>⬅ Ver Vitrine</span>
+          </button>
+          <button class="btn-admin-logout" id="btnAdminLogout" title="Encerrar sessão master">
+            <span>🔒 Sair</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Subview 1: Gestão de Licenças -->
+      <div class="admin-subview active" id="subview-licenses">
+        
+        <div class="admin-header-strip">
+          <div class="admin-title-wrap">
+            <h1>Gestão de Compradores & Licenças</h1>
+            <p>Monitore ativações, gere novas chaves, resete computadores (HWID) ou bloqueie licenças.</p>
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-secondary btn-sm" id="btnExportBackup" title="Baixar cópia em JSON">
+              <span>💾 Exportar Backup</span>
+            </button>
+            <label class="btn btn-secondary btn-sm" style="cursor: pointer;" title="Restaurar backup">
+              <span>📂 Importar Backup</span>
+              <input type="file" id="importFileInput" accept=".json" style="display: none;" />
+            </label>
+          </div>
+        </div>
+
+        <!-- KPI Metrics -->
+        <div class="admin-stats-grid">
+          <div class="stat-card accent">
+            <div class="stat-icon">🔑</div>
+            <div class="stat-info">
+              <h4 id="kpiTotal">0</h4>
+              <p>Total de Licenças</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="color: #10b981;">✓</div>
+            <div class="stat-info">
+              <h4 id="kpiActive" style="color: #10b981;">0</h4>
+              <p>Licenças Ativas</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="color: #ef4444;">✕</div>
+            <div class="stat-info">
+              <h4 id="kpiBlocked" style="color: #ef4444;">0</h4>
+              <p>Bloqueadas / Reembolso</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="color: #06b6d4;">💻</div>
+            <div class="stat-info">
+              <h4 id="kpiHwid" style="color: #06b6d4;">0</h4>
+              <p>Máquinas Vinculadas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Criar Nova Licença -->
+        <div class="admin-action-row">
+          <div class="action-card">
+            <div class="action-card-header">
+              <span class="action-card-title">⚡ Emitir Nova Licença Manual ou Kiwify</span>
+              <span style="font-size: 0.75rem; color: var(--accent-light);">Entrega Imediata</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nome do Cliente</label>
+                <input type="text" class="form-input" id="newClientName" placeholder="Ex: Felipe Ramos" />
+              </div>
+              <div class="form-group">
+                <label>E-mail do Cliente</label>
+                <input type="email" class="form-input" id="newClientEmail" placeholder="cliente@gmail.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Tipo de Plano</label>
+                <select class="form-select" id="newClientPlan">
+                  <option value="Vitalícia Kiwify">Acesso Vitalício (Kiwify)</option>
+                  <option value="Vitalícia VIP">Vitalícia VIP / Parceria</option>
+                  <option value="Teste 7 Dias">Teste 7 Dias</option>
+                </select>
+              </div>
+              <div class="form-group" style="justify-content: flex-end;">
+                <button class="btn btn-primary" id="btnCreateLicense" style="width: 100%;">
+                  <span>+ Gerar Chave & Salvar</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="key-result-box" id="quickKeyResult" style="display: none;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.75rem; color: var(--text-secondary);">Chave Gerada:</span>
+                <button class="btn btn-secondary btn-sm" onclick="copyToClipboard(document.getElementById('displayGeneratedKey').textContent)">📋 Copiar Chave</button>
+              </div>
+              <div class="key-code-display" id="displayGeneratedKey">SFXPRO-XXXX-XXXX-XXXX-XXXX</div>
+            </div>
+          </div>
+
+          <div class="action-card">
+            <div class="action-card-header">
+              <span class="action-card-title">💡 Dicas do Administrador</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">
+              • <strong>Troca de Computador:</strong> Clique no ícone 🔄 para desvincular o HWID antigo.<br>
+              • <strong>Reembolso:</strong> Se houver cancelamento, clique no cadeado 🔒 para bloquear.<br>
+              • <strong>WhatsApp:</strong> Clique no ícone 💬 para copiar a mensagem de entrega completa!
+            </p>
+            <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid var(--border-accent); border-radius: var(--radius-sm); padding: 10px; font-size: 0.8rem; color: var(--accent-light);">
+              Sua Chave Master: <strong>SFXPRO-SILAS-MAROTO-MASTER-2026</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabela -->
+        <div class="table-card">
+          <div class="table-toolbar">
+            <div class="table-search-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" class="form-input" id="adminSearchInput" placeholder="Buscar por nome, email ou chave..." />
+            </div>
+
+            <div class="table-filters">
+              <button class="filter-btn active" data-status="all">Todas</button>
+              <button class="filter-btn" data-status="active">Ativas</button>
+              <button class="filter-btn" data-status="blocked">Bloqueadas</button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>Chave de Licença</th>
+                  <th>Computador Vinculado (HWID)</th>
+                  <th>Status</th>
+                  <th>Data</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody id="licensesTableBody">
+                <!-- Preenchido via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Subview 2: Gerador Offline HWID -->
+      <div class="admin-subview" id="subview-offline">
+        <div class="action-card" style="max-width: 760px; margin: 0 auto;">
+          <h2 style="font-size: 1.5rem; margin-bottom: 8px;">Gerador de Chave Offline por HWID</h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">
+            Insira o código <strong>HWID da Máquina</strong> do cliente para calcular a chave offline autorizada pelo algoritmo do SFX PRO:
+          </p>
+
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label>HWID da Máquina (ex: SFX-97E2-AD3F-C2F5-ED1E):</label>
+            <input type="text" class="form-input" id="offlineHwidInput" placeholder="SFX-XXXX-XXXX-XXXX-XXXX" style="font-family: var(--font-mono); font-size: 1.1rem; text-transform: uppercase;" />
+          </div>
+
+          <button class="btn btn-primary btn-lg" id="btnGenOfflineKey" style="width: 100%;">
+            <span>⚡ Calcular Chave Offline Instantânea</span>
+          </button>
+
+          <div class="key-result-box" id="offlineKeyResult" style="display: none; margin-top: 24px; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 0.85rem; color: var(--text-secondary);">Chave Offline Pronta:</span>
+              <button class="btn btn-secondary btn-sm" onclick="copyToClipboard(document.getElementById('offlineKeyDisplay').textContent)">📋 Copiar Chave</button>
+            </div>
+            <div class="key-code-display" id="offlineKeyDisplay" style="font-size: 1.4rem;">SFXPRO-XXXX-XXXX-XXXX-XXXX</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subview 3: Webhook Kiwify -->
+      <div class="admin-subview" id="subview-webhook">
+        <div class="webhook-card">
+          <h3 style="font-size: 1.2rem; margin-bottom: 10px;">URL do Webhook para Kiwify</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">
+            Cole esta URL no painel da sua Kiwify (Apps > Webhooks):
+          </p>
+
+          <div class="code-box">
+            <span id="webhookUrlDisplay">https://sfxpro-licencas.silasmaroto.workers.dev/api/webhook/kiwify</span>
+            <button class="btn btn-secondary btn-sm" onclick="copyToClipboard(document.getElementById('webhookUrlDisplay').textContent)">📋 Copiar URL</button>
+          </div>
+
+          <h4 style="margin: 20px 0 8px;">Eventos a Selecionar:</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+            • <strong>Pedido pago (paid):</strong> Gera a chave e envia automaticamente.<br>
+            • <strong>Reembolso (refunded / chargeback):</strong> Bloqueia o acesso imediatamente.
+          </p>
+
+          <!-- Configuração do Link de Checkout da Kiwify -->
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px dashed rgba(255,255,255,0.1);">
+            <h4 style="margin: 0 0 6px; font-size: 1rem; color: #fbbf24;">🔗 Link do Seu Checkout Kiwify:</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">
+              Cole aqui o link do checkout gerado na Kiwify (ex: <code>https://pay.kiwify.com.br/abc1234</code>). Todos os botões "QUERO O SFX PRO" do site atualizarão automaticamente!
+            </p>
+            <div class="form-group" style="margin-bottom: 12px;">
+              <input type="url" class="form-input" id="kiwifyCheckoutInput" placeholder="https://pay.kiwify.com.br/SEU_CODIGO_AQUI" style="font-family: var(--font-mono); font-size: 0.95rem;" />
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <button class="btn btn-primary" id="btnSaveKiwifyCheckout">
+                <span>💾 Salvar Link de Checkout</span>
+              </button>
+              <span id="kiwifyCheckoutSavedMsg" style="display: none; color: #34d399; font-size: 0.82rem; font-weight: 700;">✔ Link de checkout atualizado no site!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subview 4: Links de Download (Google Drive) -->
+      <div class="admin-subview" id="subview-downloads">
+        <div class="action-card" style="max-width: 800px; margin: 0 auto;">
+          <h2 style="font-size: 1.5rem; margin-bottom: 8px;">📥 Links de Download (Google Drive)</h2>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 22px; line-height: 1.6;">
+            Configure aqui os links dos arquivos hospedados no seu <strong>Google Drive</strong>. Ao salvar, os botões da <strong>Área do Cliente</strong> abrirão automaticamente o download no Drive para os seus compradores!
+          </p>
+
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: 600;">
+              <span>🍏 Link Google Drive — Instalador macOS (v2.4 com Sons):</span>
+            </label>
+            <input type="url" class="form-input" id="gdriveMacInput" placeholder="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_MAC/view?usp=sharing" style="font-family: var(--font-mono); font-size: 0.9rem;" />
+            <small style="color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; display: block;">Link do arquivo: SFX_PRO_Studio_Mac_v2.4_Instalador.zip</small>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: 600;">
+              <span>🪟 Link Google Drive — Instalador Windows (v2.4 com Sons):</span>
+            </label>
+            <input type="url" class="form-input" id="gdriveWinInput" placeholder="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_WINDOWS/view?usp=sharing" style="font-family: var(--font-mono); font-size: 0.9rem;" />
+            <small style="color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; display: block;">Link do arquivo: SFX_PRO_Studio_Windows_v2.4_Instalador.zip</small>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 18px;">
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: 600;">
+              <span>🎵 Link Google Drive — Super Pacote +2.000 SFX (Acervo Avulso):</span>
+            </label>
+            <input type="url" class="form-input" id="gdriveSfxInput" placeholder="https://drive.google.com/file/d/SEU_ID_DO_ARQUIVO_SONS/view?usp=sharing" style="font-family: var(--font-mono); font-size: 0.9rem;" />
+            <small style="color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; display: block;">Link do arquivo: SFX_PRO_Super_Pacote_2000_SFX.zip</small>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 24px; padding-top: 14px; border-top: 1px dashed rgba(255,255,255,0.1);">
+            <label style="display: flex; align-items: center; gap: 6px; font-weight: 600;">
+              <span>📁 OU Link de Pasta Única Compartilhada no Google Drive (Opcional):</span>
+            </label>
+            <input type="url" class="form-input" id="gdriveFolderInput" placeholder="https://drive.google.com/drive/folders/SEU_ID_DA_PASTA?usp=sharing" style="font-family: var(--font-mono); font-size: 0.9rem;" />
+            <small style="color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; display: block;">Se preenchido, os botões que não tiverem link individual abrirão direto esta pasta compartilhada.</small>
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <button class="btn btn-primary btn-lg" id="btnSaveGdriveLinks" style="flex: 1;">
+              <span>💾 Salvar Links do Google Drive</span>
+            </button>
+            <button class="btn btn-secondary btn-lg" id="btnResetGdriveLinks" title="Restaurar padrão para arquivos locais da pasta /downloads">
+              <span>↺ Restaurar Padrão Local</span>
+            </button>
+          </div>
+
+          <div id="gdriveSaveFeedback" style="display: none; margin-top: 16px; padding: 12px 16px; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 8px; color: #10b981; font-size: 0.9rem; font-weight: 600;">
+            ✔ Links do Google Drive salvos com sucesso! A Área do Cliente já está direcionando os downloads para o seu Google Drive.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL DE LOGIN DO ADMIN (ACESSO RESTRITO SILAS MAROTO)
+       ====================================================================== -->
+  <div class="admin-login-overlay" id="adminLoginModal" style="display: none;">
+    <div class="admin-login-backdrop" id="adminLoginBackdrop"></div>
+    <div class="admin-login-card">
+      <button class="admin-login-close" id="btnCloseAdminLogin" title="Fechar e voltar à vitrine">✕</button>
+      
+      <div class="admin-login-header">
+        <div class="admin-lock-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3>Central de Admin SFX PRO</h3>
+        <p>Acesso restrito e exclusivo para gerenciamento de licenças, ativações e faturamento Kiwify.</p>
+      </div>
+
+      <form class="admin-login-form" id="adminLoginForm" autocomplete="on">
+        <div class="form-group">
+          <label for="adminUsername">Usuário Administrador</label>
+          <div class="input-with-icon">
+            <svg class="input-icon" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+            <input type="text" id="adminUsername" placeholder="Usuário (padrão: silas)" required autocomplete="username" spellcheck="false" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="adminPassword">Senha Master</label>
+          <div class="input-with-icon">
+            <svg class="input-icon" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1.5-1.5H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+            <input type="password" id="adminPassword" placeholder="••••••••" required autocomplete="current-password" />
+            <button type="button" class="btn-pwd-toggle" id="btnToggleAdminPwd" title="Mostrar/ocultar senha">👁</button>
+          </div>
+        </div>
+
+        <div class="admin-login-options">
+          <label class="checkbox-remember">
+            <input type="checkbox" id="adminRememberMe" checked />
+            <span>Manter conectado neste navegador</span>
+          </label>
+        </div>
+
+        <div class="admin-login-alert error" id="adminLoginError" style="display: none;">
+          <span class="alert-icon">⚠️</span>
+          <span id="adminLoginErrorMsg">Credenciais inválidas. Verifique seu usuário e senha.</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-admin-submit" id="btnSubmitAdminLogin">
+          <span>Desbloquear Painel Master</span>
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor">
+            <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </button>
+
+        <button type="button" class="btn-cancel-login" id="btnCancelAdminLogin">
+          Voltar para a Landing Page
+        </button>
+      </form>
+
+      <div class="admin-login-footer">
+        <span>🛡️ Proteção de Sessão Ativa • Autenticação Local Segura</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL DE ALTERAÇÃO DE SENHA DO ADMIN
+       ====================================================================== -->
+  <div class="admin-login-overlay" id="adminChangePwdModal" style="display: none;">
+    <div class="admin-login-backdrop" id="adminChangePwdBackdrop"></div>
+    <div class="admin-login-card">
+      <button class="admin-login-close" id="btnCloseChangePwd" title="Fechar">✕</button>
+      
+      <div class="admin-login-header">
+        <div class="admin-lock-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zM9 7a3 3 0 0 1 6 0v3H9V7z"/>
+          </svg>
+        </div>
+        <h3>Alterar Credenciais Master</h3>
+        <p>Defina seu novo nome de usuário ou senha para proteger o painel.</p>
+      </div>
+
+      <form class="admin-login-form" id="adminChangePwdForm">
+        <div class="form-group">
+          <label for="newAdminUsername">Novo Usuário Administrador</label>
+          <input type="text" id="newAdminUsername" class="admin-input-direct" placeholder="Ex: silas" required spellcheck="false" />
+        </div>
+
+        <div class="form-group">
+          <label for="newAdminPassword">Nova Senha Master</label>
+          <input type="password" id="newAdminPassword" class="admin-input-direct" placeholder="Digite a nova senha (mínimo 4 caracteres)" required minlength="4" />
+        </div>
+
+        <div class="admin-login-alert success" id="adminChangePwdSuccess" style="display: none;">
+          <span>✓ Credenciais salvas com sucesso!</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-admin-submit" style="margin-top: 10px;">
+          Salvar Novas Credenciais
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

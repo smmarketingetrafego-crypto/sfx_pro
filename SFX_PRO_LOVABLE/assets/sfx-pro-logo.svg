@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 64" width="100%" height="100%">
+  <defs>
+    <!-- Radiant Amber Gold Gradient -->
+    <linearGradient id="waveGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#fbbf24"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Horizontal Shimmer Gradient -->
+    <linearGradient id="waveHGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="25%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="75%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- PURE FLOATING SOUNDWAVE (NO BORDERS, NO BUTTONS, NO SQUIRCLE) -->
+  <g filter="url(#softGlow)" fill="url(#waveGold)">
+    <!-- Bar 1 (Left Taper) -->
+    <rect x="4" y="29" width="3" height="6" rx="1.5"/>
+    <!-- Bar 2 -->
+    <rect x="11" y="27" width="3" height="10" rx="1.5"/>
+    <!-- Bar 3 -->
+    <rect x="18" y="23" width="3.2" height="18" rx="1.6"/>
+    <!-- Bar 4 (Spike 1) -->
+    <rect x="25" y="16" width="3.2" height="32" rx="1.6"/>
+    <!-- Bar 5 -->
+    <rect x="32" y="22" width="3.2" height="20" rx="1.6"/>
+    <!-- Bar 6 (Spike 2) -->
+    <rect x="39" y="10" width="3.4" height="44" rx="1.7"/>
+    <!-- Bar 7 -->
+    <rect x="46" y="18" width="3.4" height="28" rx="1.7"/>
+    <!-- Bar 8 (MAIN CENTER PEAK 1) -->
+    <rect x="53" y="4" width="3.8" height="56" rx="1.9" fill="#fff" opacity="0.95"/>
+    <rect x="53" y="4" width="3.8" height="56" rx="1.9" fill="url(#waveGold)" opacity="0.85"/>
+    <!-- Bar 9 (MAIN CENTER PEAK 2) -->
+    <rect x="61" y="7" width="3.8" height="50" rx="1.9"/>
+    <!-- Bar 10 -->
+    <rect x="69" y="14" width="3.4" height="36" rx="1.7"/>
+    <!-- Bar 11 (Spike 3) -->
+    <rect x="76" y="9" width="3.4" height="46" rx="1.7"/>
+    <!-- Bar 12 -->
+    <rect x="83" y="20" width="3.2" height="24" rx="1.6"/>
+    <!-- Bar 13 (Spike 4) -->
+    <rect x="90" y="17" width="3.2" height="30" rx="1.6"/>
+    <!-- Bar 14 -->
+    <rect x="97" y="24" width="3.2" height="16" rx="1.6"/>
+    <!-- Bar 15 -->
+    <rect x="104" y="27" width="3" height="10" rx="1.5"/>
+    <!-- Bar 16 (Right Taper) -->
+    <rect x="111" y="29" width="3" height="6" rx="1.5"/>
+  </g>
+
+  <!-- Glowing Center Horizon Line -->
+  <line x1="2" y1="32" x2="118" y2="32" stroke="url(#waveHGold)" stroke-width="1" opacity="0.45"/>
+</svg>
